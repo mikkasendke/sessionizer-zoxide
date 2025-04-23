@@ -2,7 +2,7 @@ local wezterm = require "wezterm"
 
 local generator = {}
 
-generator.Zoxide = function()
+generator.Zoxide = function(opts)
     return function()
         local res = {}
         local success, stdout, stderr = wezterm.run_child_process {
